@@ -1,0 +1,315 @@
+body {
+  background-color: #464646;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  h1 {
+    margin-top: 24px;
+    margin-bottom: 0px;
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  h3 {
+    margin-top: 125px;
+    margin-bottom: 0px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 117px;
+  }
+
+  h4 {
+    background-color: white;
+    width: 398px;
+    min-height: 25px;
+    border-radius: 25px;
+    border-style: none;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    margin-left: 92px;
+  }
+
+  h5 {
+    margin-top: 49px;
+    margin-bottom: 0px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 117px;
+  }
+
+  .nickname input {
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    width: 196px;
+    height: 30px;
+    border-radius: 25px;
+    border-style: none;    
+    padding-left: 12px;
+    padding-right: 42px;
+    justify-content: center;
+    margin-left: 30px;
+  }
+
+  .nickname button {
+    position: relative;
+    right: 30px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-style: none;
+  }
+
+  .enter {
+    width: 606px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-style: none;
+    width: 30%;
+    border-radius: 25px;
+  }
+
+  .modal-content button {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 90%;
+    width: fit-content;
+  }
+
+  .modal-content h5 {
+    margin: 10% 0;
+    padding: 0;
+    width: 100%;
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .join input {
+    background-color: white;
+    width: 363px;
+    height: 35px;
+    border-radius: 25px;
+    border-style: none;
+    color: black;
+    font-size: 18px;
+    padding-left: 14px;
+    padding-right: 49px;
+    margin-left: 92px;
+  }
+
+  .join button {
+    position: relative;
+    right: 35px;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border-style: none;
+  }
+
+  .entire {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .peerStream {
+    flex: 3;
+  }
+
+  .peerStream video {
+    max-width: 400px;
+    margin: 45px 40px 0px 30px;
+  }
+
+  .peerStream h3 {
+    margin-left: 40px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .myStream {
+    flex: 3;
+  }
+
+  .myStream video {
+    max-width: 400px;
+    margin: 45px 30px 0px 40px;
+  }
+
+  .myStream button {
+    width: fit-content;
+    padding: 5px 14px;
+    margin: 5px 10px;
+    background-color: white;
+    height: 25px;
+    border-radius: 25px;
+    border-style: none;
+    color: black;
+    font-size: 18px;
+  }
+
+  .myStream .first {
+    margin-left: 40px;
+  }
+
+  .myStream select {
+    width: fit-content;
+    height: 35px;
+    margin: 5px 40px;
+    background-color: white;
+    height: fit-content;
+    border-radius: 25px;
+    border-style: none;
+    color: black;
+    font-size: 18px;
+  }
+
+  .room {
+    flex: 4;
+  }
+
+  .room h3 {
+    margin: 25px auto 5px auto;
+    width: 90%;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+  }
+
+  ul {
+    width: 100%;
+    min-width: 400px;
+    height: 440px;
+    overflow-y: scroll;
+    padding: 5px 0 0 0;
+    margin: 0px;
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  .you {
+    background-color: white;
+    max-width: 95%;
+    width:fit-content;
+    min-height: 25px;
+    border-radius: 25px;
+    border-style: none;
+    color: black;
+    font-size: 18px;
+    padding-left: 14px;
+    padding-right: 37px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    word-break: break-all;
+    margin-bottom: 15px;
+    list-style: none;
+    margin-left: 21px;
+  }
+
+  .me {
+    background-color: #D8DBDB;
+    max-width: 95%;
+    width:fit-content;
+    min-height: 25px;
+    border-radius: 25px;
+    border-style: none;
+    color: black;
+    font-size: 18px;
+    padding-left: 14px;
+    padding-right: 37px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    word-break: break-all;
+    margin-bottom: 15px;
+    list-style: none;
+    margin-right: 21px;
+    margin-left: auto;
+  }
+
+  .notice {
+    background-color: black;
+    max-width: 100%;
+    min-height: 25px;
+    border-radius: 25px;
+    border-style: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 14px 5px 14px;
+    word-break: normal;
+    margin: 0 21px 15px 21px;
+    list-style: none;
+  }
+
+  .message input {
+    background-color: white;
+    width: 70%;
+    height: 35px;
+    border-radius: 25px;
+    border-style: none;
+    color: black;
+    font-size: 18px;
+    padding-left: 14px;
+    padding-right: 35px;
+    margin: 20px auto 10px 35px;
+  }
+
+  .message button {
+    position: relative;
+    right: 35px;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border-style: none;
+  }
+
+  .exit {
+    background-color: white;
+    width: 10%;
+    height: 32px;
+    border-radius: 25px;
+    border-style: none;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+  

@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title NOOM
+        link(rel="stylesheet", href="/public/styles.css")
+    body
+        header
+            h1 NOOM
+        main
+            form#nickname.nickname
+                input(value="익명", placeholder="닉네임", required, type="text", maxlength="13").nickname
+                button.nickname ✔️
+            div#enter.enter
+                h3 Open Room List
+                h4
+                h5 Enter Room
+                form#join.join
+                    input(placeholder="방 이름", required, type="text", maxlength="20").join
+                    button.join ✔️
+            div#modal.modal
+                div.modal-content
+                    button.modal-content ❌
+                    h5.modal-content The Room is Full
+            div.entire
+                div#peerStream.peerStream
+                    video#peerFace(autoplay,playsinline).peerStream
+                    h3.peerStream
+                div#room.room
+                    h3
+                    button#exit.exit Exit
+                    ul
+                    form#message.message
+                        input(placeholder="메시지를 입력하세요.", required, type="text").message
+                        button.message ✔️
+                div#myStream.myStream
+                    video#myFace(autoplay,playsinline).myStream
+                    button#mute.myStream.first Mute
+                    button#camera.myStream Camera Off
+                    select#cameras.myStream
+        script(src="/socket.io/socket.io.js") 
+        script(src="/public/js/app.js") 
